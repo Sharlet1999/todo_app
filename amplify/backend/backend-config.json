@@ -1,0 +1,43 @@
+{
+  "api": {
+    "api39ff9cef": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "todoapp99ec6bbc"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "todoapp99ec6bbc": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_todoapp99ec6bbc_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "todoapp99ec6bbc"
+        }
+      ]
+    },
+    "AMPLIFY_function_todoapp99ec6bbc_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "todoapp99ec6bbc"
+        }
+      ]
+    }
+  }
+}
